@@ -26,7 +26,7 @@ export default function SolarShingles() {
   };
 
   return (
-    <section className="w-full flex justify-center mt-24 lg:mt-0 lg:py-28 bg-white">
+    <section className="w-full flex justify-center mt-24 lg:mt-0 lg:pt-28 bg-white">
       <div className="w-[90%] lg:w-[80%] max-w-[1400px] grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         {/* LEFT COLUMN */}
