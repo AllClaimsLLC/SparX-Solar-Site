@@ -17,6 +17,14 @@ export default function Navbar() {
     { name: "Contact", id: "contact" },
   ];
 
+  const openCalendly = () => {
+  window.open(
+    "https://calendly.com/ryanp-sparx/30min",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+
   return (
 <nav className="absolute top-4 left-0 w-full z-50 pointer-events-auto">
   {/* Skewed Navbar Container */}
@@ -102,13 +110,7 @@ export default function Navbar() {
           size="medium"
           icon={<MdKeyboardArrowRight size={20} />}
           rounded={true}
-          onClick={() => {
-            setIsOpen(false);
-            const contactSection = document.getElementById("contact");
-            if (contactSection) {
-              contactSection.scrollIntoView({ behavior: "smooth" });
-            }
-          }}
+         onClick={openCalendly}
         />
       </li>
     </ul>
