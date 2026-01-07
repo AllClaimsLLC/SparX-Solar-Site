@@ -1,38 +1,34 @@
-"use client";
+"use client"; 
 
 export default function WhySparXSolar() {
   const boxes = [
     {
-      heading: "",
-      desc: "Customers face multiple barriers that reduce trust and slow down decision-making:",
+      heading: "Direct & Responsive Communication",
+      desc: "Our team is always within reach. Customers can connect quickly through scheduled consultations, fast callbacks, and dedicated project coordinators—ensuring clarity at every step of the journey.",
     },
     {
-      heading: "Missing Clear CTAs",
-      desc: "The website lacks strong, visible calls-to-action, making it unclear what steps customers should take next.",
+      heading: "Reputation Built on Real Results",
+      desc: "Spar-X Solar grows through referrals and real-world performance. Our work speaks through completed projects, partner relationships, and measurable energy outcomes—not empty promises.",
     },
     {
-      heading: "No Active Social Presence",
-      desc: "With little to no social media activity, customers find it hard to validate the brand’s credibility.",
+      heading: "People-First Company Culture",
+      desc: "We invest deeply in our team, processes, and technology. Our focus on growth, learning, and innovation creates better experiences—for employees and customers alike.",
     },
     {
-      heading: "Weak Trust Signals",
-      desc: "There are not enough trust-building elements such as certifications, testimonials, case studies, or guarantees.",
+      heading: "Guided Customer Journey",
+      desc: "From first contact to system activation, we guide customers through a clear, structured process—educating, supporting, and optimizing decisions every step of the way.",
     },
     {
-      heading: "No Instant Communication Channel",
-      desc: "Absence of live chat or quick-response options makes customers feel unsupported during their decision-making process.",
+      heading: "Simple Next Steps",
+      desc: "We make it easy to move forward—whether you’re exploring solar options, requesting a consultation, or planning a future upgrade. No pressure. Just clarity.",
     },
     {
-      heading: "No Review Ecosystem",
-      desc: "There is no structured platform or system where customers can read or share reviews to build trust.",
+      heading: "Focused on Execution, Not Noise",
+      desc: "Rather than chasing trends, we focus on building advanced energy systems and next-generation products—including solar shingles and integrated smart infrastructure.",
     },
     {
-      heading: "A Negative Indeed Review Ranking First",
-      desc: "A single negative review appearing at the top damages first impressions and discourages potential buyers.",
-    },
-    {
-      heading: "No Lead Nurturing System",
-      desc: "There is no automated or consistent follow-up process to educate, nurture, and convert leads over time.",
+      heading: "Built for the Future of Energy",
+      desc: "Spar-X Solar is part of a broader innovation ecosystem—combining solar, smart infrastructure, and intelligent monitoring to deliver long-term value, reliability, and performance.",
     },
   ];
 
@@ -54,24 +50,18 @@ export default function WhySparXSolar() {
               key={index}
               className={`p-6 rounded-[20px] min-h-[180px] flex flex-col justify-start ${
                 index === 0
-                  ? "bg-[#FA8C3D] text-white text-[20px]"
+                  ? "bg-[#FA8C3D] text-white"
                   : "bg-[#FFF6EF] text-[#303F52B2]"
               }`}
             >
               {box.heading && (
                 <h3
-                  className={`font-semibold mb-2 ${
-                    index === 0 ? "text-white text-[20px]" : "text-[#303F52B2] text-lg"
-                  }`}
+                  className={`font-semibold mb-2 text-lg`}
                 >
                   {box.heading}
                 </h3>
               )}
-              <p
-                className={`leading-relaxed ${
-                  index === 0 ? "text-white text-[20px]" : "text-[#303F52B2] text-sm"
-                }`}
-              >
+              <p className={`leading-relaxed text-sm`}>
                 {box.desc}
               </p>
             </div>
