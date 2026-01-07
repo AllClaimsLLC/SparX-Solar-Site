@@ -151,7 +151,7 @@ html {
 @media (max-width: 639px) {
   .hero-wrapper {
     min-height: auto; 
-    padding-top: 96px; /* controlled top spacing */
+    padding-top: 150px;
   }
 
   .hero-content {
