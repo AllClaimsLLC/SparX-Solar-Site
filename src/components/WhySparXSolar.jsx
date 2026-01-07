@@ -43,7 +43,7 @@ export default function WhySparXSolar() {
         <h2 className="text-3xl md:text-4xl mb-12 text-[#303F52]">
           Why Sparx Solar{" "}
           <span className="text-[#FA8C3D] block mt-2 font-bold">
-            <span className="text-[#303F52] font-normal">Is</span> “Hard to Buy From”
+            <span className="text-[#303F52] font-normal"></span> “Solar Made Simple”
           </span>
         </h2>
 
