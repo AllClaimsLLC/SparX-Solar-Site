@@ -8,11 +8,14 @@ export default function HeroSection() {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // const openConsultation = () => {
-  //   document
-  //     .getElementById("consultation")
-  //     ?.scrollIntoView({ behavior: "smooth" });
-  // };
+const openCalendly = () => {
+  window.open(
+    "https://calendly.com/ryanp-sparx/30min",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+
 
   return (
     <section
@@ -62,7 +65,7 @@ export default function HeroSection() {
               textColor="#303F52"
               size="small sm:medium"
               icon={<MdKeyboardArrowRight size={22} />}
-              onClick={scrollToContact}
+              onClick={openCalendly}
             />
           </div>
         </div>
