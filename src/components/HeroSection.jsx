@@ -4,6 +4,23 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import SkewedButton from "./SkewedButton";
 
 export default function HeroSection() {
+const scrollToContact = () => {
+  const el = document.getElementById("contact");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const openConsultation = () => {
+  // OPTION A: Calendly
+  // window.open("https://calendly.com/your-link-here", "_blank");
+
+  // OPTION B - need to make a section for this:
+  document.getElementById("consultation")?.scrollIntoView({ behavior: "smooth" });
+};
+
+
+
   return (
     <>
 <section
@@ -47,6 +64,7 @@ export default function HeroSection() {
   textColor="#fff"
   size="small sm:medium"
   icon={<MdKeyboardArrowRight size={22} />}
+  onClick={scrollToContact}
 />
 
 <SkewedButton
@@ -55,7 +73,9 @@ export default function HeroSection() {
   textColor="#303F52"
   size="small sm:medium"
   icon={<MdKeyboardArrowRight size={22} />}
+  onClick={openConsultation}
 />
+
 
 
           </div>
@@ -86,19 +106,23 @@ export default function HeroSection() {
       </p>
       <div className="flex flex-row gap-4 pt-4">
         <SkewedButton
-          text="Free Quote"
-          color="#FA8C3D"
-          textColor="#fff"
-          size="small"
-          icon={<MdKeyboardArrowRight size={22} />}
-        />
-        <SkewedButton
-          text="Book Consultation"
-          color="white"
-          textColor="#303F52"
-          size="small"
-          icon={<MdKeyboardArrowRight size={22} />}
-        />
+  text="Free Quote"
+  color="#FA8C3D"
+  textColor="#fff"
+  size="small"
+  icon={<MdKeyboardArrowRight size={22} />}
+  onClick={scrollToContact}
+/>
+
+<SkewedButton
+  text="Book Consultation"
+  color="white"
+  textColor="#303F52"
+  size="small"
+  icon={<MdKeyboardArrowRight size={22} />}
+  onClick={openConsultation}
+/>
+
       </div>
     </div>
   </div>

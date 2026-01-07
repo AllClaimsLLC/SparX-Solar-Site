@@ -19,11 +19,15 @@ export default function Home() {
         <HeroSection />
       </section>
 
-        <WhySparXSolar />
-
-        <OurCommitment />
-
       <section id="services">
+        <WhySparXSolar />
+      </section>
+
+      <section id="commitment">
+        <OurCommitment />
+      </section>
+
+      <section id="whychooseus">
         <WhyChooseSparXSolar />
       </section>
 
@@ -31,7 +35,7 @@ export default function Home() {
         <OurProcess />
       </section>
 
-        <Testimonials />
+      <Testimonials />
 
       <section id="contact">
         <Contact />
@@ -41,7 +45,6 @@ export default function Home() {
     </>
   );
 }
-
 
 // <div
 //       style={{

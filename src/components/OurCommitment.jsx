@@ -56,7 +56,7 @@ export default function OurCommitment() {
   size="medium"
   icon={<MdKeyboardArrowRight size={22} />}
   onClick={() => {
-    const contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById("consultation");
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
