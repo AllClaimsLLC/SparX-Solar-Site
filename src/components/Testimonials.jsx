@@ -5,17 +5,19 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
 export default function Testimonials() {
-  const testimonials = [
-    {
+const testimonials = [
+  {
       text: "Switching to Sparx Solar was the best decision for our home. From the first consultation, their team showed professionalism, knowledge, and genuine care for our energy needs. They guided us through every step — from planning and permits to installation — and made sure we understood the system. Now, we enjoy reliable, clean solar energy that reduces our electricity bills and supports a greener future. The entire process was transparent, stress-free, and customer-focused. I highly recommend Sparx Solar to anyone considering solar energy.",
-      name: "Ali Khan, Homeowner",
-    },
-    {
+    name: "Ali Khan, Homeowner",
+    image: "/images/testimonials.png",
+  },
+  {
       text: "Sparx Solar made the transition to solar energy seamless. Their transparent pricing and expert guidance made it simple. The installation team was professional and thorough, and they ensured everything was explained clearly. Our energy bills have decreased significantly, and we are proud to be using clean energy.",
-      name: "Sara Ahmed, Homeowner",
-    },
-    // Add more testimonials if needed
-  ];
+    name: "Sara Ahmed, Homeowner",
+    image: "/images/testimonials2.png",
+  },
+];
+
 
   const [current, setCurrent] = useState(0);
 
@@ -32,11 +34,12 @@ export default function Testimonials() {
       <div className="w-[98%] md:w-[80%] flex flex-col lg:flex-row gap-8 items-center">
         {/* Left Column: Image */}
         <div className="lg:w-1/2 flex justify-center lg:justify-start">
-          <img
-            src="/images/testimonials.png"
-            alt="Customer Testimonials"
+         <img
+  src={testimonials[current].image}
+  alt={testimonials[current].name}
             className="rounded-[20px] w-[85%] h-auto object-cover"
-          />
+/>
+
         </div>
 
         {/* Right Column: Testimonials */}

@@ -23,6 +23,14 @@ export default function OurCommitment() {
     },
   ];
 
+    const openCalendly = () => {
+  window.open(
+    "https://calendly.com/ryanp-sparx/30min",
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
+
   return (
     <>
     <section className="flex justify-center mt-24 lg:mt-0">
@@ -55,12 +63,7 @@ export default function OurCommitment() {
   textColor="#fff"
   size="medium"
   icon={<MdKeyboardArrowRight size={22} />}
-  onClick={() => {
-    const contactSection = document.getElementById("consultation");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  }}
+ onClick={openCalendly}
 />
 
 
@@ -92,41 +95,6 @@ export default function OurCommitment() {
         </div>
       </div>
     </section>
-    <section className="flex justify-center  mt-24 lg:mt-0 lg:py-28">
-  <div className="w-[90%] md:w-[80%] flex flex-col lg:flex-row items-center lg:items-center lg:gap-6 gap-8">
-    {/* Left Column: Image */}
-    <div className="lg:w-1/2">
-<img
-        src="/images/guaranteed-jobs.jpg"
-        alt="Guaranteed Jobs"
-        className="rounded-[20px] w-full lg:w-[80%] h-[500px] md:h-[500px] lg:h-[500px] object-cover"
-      />
-    </div>
-
-    {/* Right Column: Text + Boxes */}
-    <div className="lg:w-1/2 flex flex-col gap-6">
-      {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl md:text-[36px] custom-lh text-[#303F52]">
-        Guaranteed <span className="text-[#FA8C3D] font-bold">15 Jobs</span> <span className="block">Within your first <span className="text-[#FA8C3D] font-bold">90 days</span></span>
-      </h2>
-
-      {/* Subtext */}
-      <p className="text-lg text-[#303F52]">
-        We take full responsibility for your success — that’s why our guarantee is risk-free and performance-based.
-      </p>
-
-      {/* Boxes */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-[#FFD1B133] p-6 rounded-[20px] text-[#303F52]">
-          If we don’t deliver, we’ll return your money to compensate for your time.
-        </div>
-        <div className="bg-[#FFD1B133] p-6 rounded-[20px] text-[#303F52]">
-          Or we’ll stay on the project at no charge and keep working until the goal is fully met.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
     </>
   );

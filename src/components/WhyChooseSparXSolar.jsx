@@ -22,7 +22,7 @@ export default function WhyChooseSparXSolar() {
     },
     {
       type: "image",
-      bgImage: "/images/honest-pricing.png",
+      bgImage: "/images/honest-pricing.jpeg",
       heading: "Honest Pricing",
       text: "No hidden fees. No sales pressure. Just a 100% transparent, honest, and straightforward process from start to finish.",
     },
@@ -30,7 +30,7 @@ export default function WhyChooseSparXSolar() {
 
   return (
     <>
-    <section className="flex justify-center mt-24 lg:mt-0">
+    <section className="flex justify-center mt-24">
       <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-2 gap-6">
         {boxes.map((box, index) => (
           <div
