@@ -12,8 +12,8 @@ export default function Navbar() {
   const menuItems = [
     { name: "Home", id: "home" },
     { name: "Our Process", id: "ourprocess" },
-    { name: "Services", id: "services", dropdown: true },
-    { name: "Locations", id: "locations" },
+    { name: "Services", id: "services" },
+    // { name: "Locations", id: "locations" },
     { name: "Contact", id: "contact" },
   ];
 
@@ -43,7 +43,7 @@ export default function Navbar() {
           >
             {item.name}
           </a>
-          {item.dropdown && <MdKeyboardArrowDown size={20} className="mt-[2px]" />}
+          {/* {item.dropdown && <MdKeyboardArrowDown size={20} className="mt-[2px]" />} */}
         </li>
       ))}
     </ul>

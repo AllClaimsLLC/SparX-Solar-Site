@@ -63,7 +63,7 @@ export default function Footer() {
             <div className="flex justify-between w-full">
               {/* Left Menu */}
               <ul className="text-[#303F52] text-base md:text-lg space-y-2">
-                <li><a href="#">About</a></li>
+                <li><a href="#About">About</a></li>
                 <li><a href="#commitment">Committment</a></li>
                 <li><a href="#services">Services</a></li>
               </ul>

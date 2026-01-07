@@ -8,11 +8,11 @@ export default function HeroSection() {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const openConsultation = () => {
-    document
-      .getElementById("consultation")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const openConsultation = () => {
+  //   document
+  //     .getElementById("consultation")
+  //     ?.scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <section
@@ -57,12 +57,12 @@ export default function HeroSection() {
             />
 
             <SkewedButton
-              text="Book Consultation"
+              text="Request a Call Back"
               color="white"
               textColor="#303F52"
               size="small sm:medium"
               icon={<MdKeyboardArrowRight size={22} />}
-              onClick={openConsultation}
+              onClick={scrollToContact}
             />
           </div>
         </div>
