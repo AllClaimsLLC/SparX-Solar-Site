@@ -3,16 +3,7 @@
 export default function OurProcess() {
   return (
     <>
-    <section className="w-full bg-[#14273C]  mt-24 py-24 flex justify-center items-center text-center px-4">
-      <h2 className="text-[40px] md:text-[55px] leading-[1.2] max-w-[1200px] text-white font-[200]">
-        <span className="text-[#FA8C3D]">Sparx Solar</span>{" "}
-        <span className="capitalize">
-          Brings The Sun’s <span className="block font-[200]">Power To Your Doorstep With</span>{" "}
-          <span className="block">Trusted Technology, Transparent</span>{" "}
-          <span className="block">Processes, And Unmatched</span> Reliability.
-        </span>
-      </h2>
-    </section>
+
 
     <section className="w-full py-24 flex justify-center px-4">
         <div className="w-[98%] md:w-[80%]">

@@ -14,17 +14,34 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <WhySparXSolar />
-      <OurCommitment />
-      <WhyChooseSparXSolar />
-      <OurProcess />
-      <Testimonials />
-      <Contact />
+
+      <section id="home">
+        <HeroSection />
+      </section>
+
+        <WhySparXSolar />
+
+        <OurCommitment />
+
+      <section id="services">
+        <WhyChooseSparXSolar />
+      </section>
+
+      <section id="ourprocess">
+        <OurProcess />
+      </section>
+
+        <Testimonials />
+
+      <section id="contact">
+        <Contact />
+      </section>
+
       <Footer />
     </>
   );
 }
+
 
 // <div
 //       style={{
