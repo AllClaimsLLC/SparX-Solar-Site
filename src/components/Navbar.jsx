@@ -65,12 +65,7 @@ export default function Navbar() {
         size="medium"
         icon={<MdKeyboardArrowRight size={22} />}
         rounded={true}
-        onClick={() => {
-          const contactSection = document.getElementById("contact");
-          if (contactSection) {
-            contactSection.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
+        onClick={openCalendly}
       />
     </div>
 
