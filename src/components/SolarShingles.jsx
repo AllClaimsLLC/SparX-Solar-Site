@@ -41,7 +41,7 @@ export default function SolarShingles() {
 
           {/* Description */}
           <p className="text-[#303F52B2] text-base sm:text-lg leading-relaxed">
-            SparX Solar brings future-ready solar technology to your home with sleek, roof-integrated solar shingles that combine energy production and elegant design. Experience clean energy without compromising your roof aesthetics.
+            Sparx Solar brings future-ready solar technology to your home with sleek, roof-integrated solar shingles that combine energy production and elegant design. Experience clean energy without compromising your roof aesthetics.
           </p>
 
           {/* CTA Button */}

@@ -12,7 +12,7 @@ export default function About() {
         {/* About Paragraph Box */}
         <div className="bg-[#FA8C3D] rounded-[20px] p-6 sm:p-8 lg:p-10 text-white">
           <p className="text-left leading-relaxed text-base sm:text-lg md:text-xl">
-            At SparX Solar, we help homeowners transition to clean, reliable
+            At Sparx Solar, we help homeowners transition to clean, reliable
             energy with a focus on simplicity, transparency, and lasting
             results. Guided by a people-first culture and a commitment to
             innovation, we deliver high-quality solar installations, premium
@@ -22,7 +22,7 @@ export default function About() {
             future, while building next-generation energy systems that integrate
             smart infrastructure and intelligent monitoring. With a structured,
             customer-focused process and a dedication to measurable outcomes,
-            SparX Solar is shaping the future of energy—making solar
+            Sparx Solar is shaping the future of energy—making solar
             straightforward, trustworthy, and impactful for every home.
           </p>
         </div>

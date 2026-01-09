@@ -8,7 +8,7 @@ export default function WhySparXSolar() {
     },
     {
       heading: "Reputation Built on Real Results",
-      desc: "Spar-X Solar grows through referrals and real-world performance. Our work speaks through completed projects, partner relationships, and measurable energy outcomes—not empty promises.",
+      desc: "Sparx Solar grows through referrals and real-world performance. Our work speaks through completed projects, partner relationships, and measurable energy outcomes—not empty promises.",
     },
     {
       heading: "People-First Company Culture",
@@ -28,7 +28,7 @@ export default function WhySparXSolar() {
     },
     {
       heading: "Built for the Future of Energy",
-      desc: "Spar-X Solar is part of a broader innovation ecosystem—combining solar, smart infrastructure, and intelligent monitoring to deliver long-term value, reliability, and performance.",
+      desc: "Sparx Solar is part of a broader innovation ecosystem—combining solar, smart infrastructure, and intelligent monitoring to deliver long-term value, reliability, and performance.",
     },
   ];
 
