@@ -9,15 +9,13 @@ export default function OurProcessExteriors() {
     <section className="w-full py-24 flex justify-center px-4">
       <div className="w-[98%] md:w-[85%]">
         {/* Top row */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
-          <h2 className="text-3xl md:text-4xl text-[#303F52] text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-start sm:items-center gap-6">
+           <h2 className="text-2xl md:text-4xl text-[#303F52] text-left">
             Our Process
           </h2>
 
           <p className="text-lg md:text-[14px] text-[#303F52] max-w-lg">
-            At Sparx Solar, we make going solar simple, seamless, and
-            stress-free. From the initial assessment to powering your home with
-            clean energy, we guide you every step of the way.
+            Simple, transparent, and stress-free from start to finish.
           </p>
         </div>
 
@@ -32,11 +30,11 @@ export default function OurProcessExteriors() {
               01
             </h3>
             <h4 className="text-lg text-[#303F52] mb-2">
-              Planning & Permitting
+              Request a Free Estimate
             </h4>
             <p className="text-[#303F52] text-sm md:text-base">
-              We begin by thoroughly inspecting your property and designing a
-              customized solar plan.
+              Reach out online or by phone. No obligation, no pressure — just a
+              real conversation about your home and goals.
             </p>
           </div>
 
@@ -45,10 +43,12 @@ export default function OurProcessExteriors() {
             <h3 className="text-6xl md:text-[8rem] font-[200] text-black pb-6">
               02
             </h3>
-            <h4 className="text-lg text-[#303F52] mb-2">Installation</h4>
+            <h4 className="text-lg text-[#303F52] mb-2">
+              Consultation & Planning
+            </h4>
             <p className="text-[#303F52] text-sm md:text-base">
-              Our expert team installs high-quality solar panels with precision
-              and safety.
+              We visit your property, assess your needs, and create a customized
+              plan with clear, transparent pricing.
             </p>
           </div>
 
@@ -58,11 +58,11 @@ export default function OurProcessExteriors() {
               03
             </h3>
             <h4 className="text-lg text-[#303F52] mb-2">
-              Approval & Activation
+              Professional Installation
             </h4>
             <p className="text-[#303F52] text-sm md:text-base">
-              After inspection, we activate your system and connect it to the
-              grid.
+              Our certified crew completes the work on schedule, to spec, with
+              full cleanup before we leave.
             </p>
           </div>
 
@@ -72,11 +72,11 @@ export default function OurProcessExteriors() {
               04
             </h3>
             <h4 className="text-lg text-[#303F52] mb-2">
-              Maintenance & Support
+              Final Walkthrough & Satisfaction
             </h4>
             <p className="text-[#303F52] text-sm md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We walk you through every detail before we leave. Your complete
+              satisfaction is our only measure of success.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function OurProcessExteriors() {
           {/* LEFT IMAGE */}
           <div className="order-2 lg:order-1">
             <Image
-              src="/images/fast-installation.jpg"
+              src="/images/FFA.png"
               alt="Process"
               width={600}
               height={500}
@@ -95,42 +95,42 @@ export default function OurProcessExteriors() {
 
           {/* RIGHT CONTENT */}
           <div className="space-y-6 order-1 lg:order-2">
-            <h2 className="text-xl sm:text-3xl leading-[1.2]">
-              Seamless Solar Experience From Start To Finish
+             <h2 className="text-2xl md:text-4xl text-[#303F52] text-left">
+              Flexible
+              <br className="hidden sm:block" />{" "}
+              Financing Available
             </h2>
 
             <p className="text-gray-600 text-base md:text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
-              ad minim veniam, quis nostrud exercitation.
+              We offer convenient financing options to make your home
+              improvements affordable and stress-free.
             </p>
 
             {/* Points */}
             <div className="space-y-3">
               <div className="flex items-start gap-2">
-                <GiCheckMark className="text-[#FA8C3D] mt-1" />
+                <GiCheckMark className="text-gray-700 mt-1" />
                 <p className="text-sm text-gray-700">
-                  Fast and reliable installation process
+                  $0 down options available
                 </p>
               </div>
 
               <div className="flex items-start gap-2">
-                <GiCheckMark className="text-[#FA8C3D] mt-1" />
+                <GiCheckMark className="text-gray-700 mt-1" />
                 <p className="text-sm text-gray-700">
-                  Expert engineering and planning support
+                  Flexible monthly payment plans
                 </p>
               </div>
 
               <div className="flex items-start gap-2">
-                <GiCheckMark className="text-[#FA8C3D] mt-1" />
-                <p className="text-sm text-gray-700">
-                  Transparent pricing with no hidden costs
-                </p>
+                <GiCheckMark className="text-gray-700 mt-1" />
+                <p className="text-sm text-gray-700">Fast approval process</p>
               </div>
 
               <div className="flex items-start gap-2">
-                <GiCheckMark className="text-[#FA8C3D] mt-1" />
+                <GiCheckMark className="text-gray-700 mt-1" />
                 <p className="text-sm text-gray-700">
-                  Lifetime customer support assistance
+                  Available on all services
                 </p>
               </div>
             </div>

@@ -5,19 +5,22 @@ import Image from "next/image";
 export default function ProjectsExteriors() {
   const cards = [
     {
-      title: "Solar Installations",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      title: "Residential Solar Installation",
+      desc: "Phoenix, AZ — 8.4 kW custom system",
       link: "SOLAR",
+      img: "/images/RSI.png",
     },
     {
-      title: "Roofing Projects",
-      desc: "Ut enim ad minim veniam quis nostrud exercitation.",
+      title: "Full Roof Replacement",
+      desc: "Rancho Cucamonga, CA — CertainTeed Landmark",
       link: "ROOFING",
+      img: "/images/FRR.png",
     },
     {
-      title: "Siding Work",
-      desc: "Duis aute irure dolor in reprehenderit in voluptate.",
+      title: "Full Siding Installation",
+      desc: "Phoenix, AZ — LP SmartSide vinyl",
       link: "SIDING",
+      img: "/images/FSI.png",
     },
   ];
 
@@ -27,13 +30,12 @@ export default function ProjectsExteriors() {
 
         {/* Heading */}
         <div className="max-w-[800px] m-auto space-y-4 mb-14">
-         <h2 className="text-3xl md:text-4xl text-[#303F52] text-left sm:text-center">
+          <h2 className="text-2xl md:text-4xl text-[#303F52] text-left sm:text-center">
             Projects & Results
           </h2>
 
           <p className="text-gray-600 text-base sm:text-lg text-left sm:text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Real homes, real transformations. See the Sparx Exteriors difference.
           </p>
         </div>
 
@@ -49,7 +51,7 @@ export default function ProjectsExteriors() {
               {/* IMAGE */}
               <div className="w-full h-[200px] overflow-hidden">
                 <Image
-                  src="/images/ourcommitment-bg.jpg"
+                  src={card.img}
                   alt={card.title}
                   width={600}
                   height={400}
@@ -60,7 +62,7 @@ export default function ProjectsExteriors() {
               {/* CONTENT */}
               <div className="p-5 flex flex-col flex-1">
 
-                <h3 className="text-xl font-semibold text-[#303F52] mb-2">
+                <h3 className="text-lg font-[500] text-[#303F52] mb-2">
                   {card.title}
                 </h3>
 
@@ -68,7 +70,7 @@ export default function ProjectsExteriors() {
                   {card.desc}
                 </p>
 
-                {/* LINK (spaced properly) */}
+                {/* LINK */}
                 <div className="mt-14">
                   <a
                     href="#"

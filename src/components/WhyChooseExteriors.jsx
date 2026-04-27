@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function WhyChooseExteriors() {
   const boxes = [
-    { icon: "/icons/transparency.png", heading: "Transparency" },
-    { icon: "/icons/transparency.png", heading: "Top-quality Service" },
-    { icon: "/icons/transparency.png", heading: "Warranty" },
-    { icon: "/icons/transparency.png", heading: "Fast Installation" },
-    { icon: "/icons/transparency.png", heading: "Trusted Experts" },
+    { icon: "/icons/HQW.png", heading: "High-Quality Workmanship" },
+    { icon: "/icons/ILW.png", heading: "Industry-Leading Warranties" },
+    { icon: "/icons/FFO.png", heading: "Flexible Financing Options" },
+    { icon: "/icons/EPT.png", heading: "Experienced & Professional Team" },
+    { icon: "/icons/OCFAEN.png", heading: "One Company for All Exterior Needs" },
   ];
 
   return (
@@ -17,15 +17,15 @@ export default function WhyChooseExteriors() {
         className="w-[90%] rounded-[30px] overflow-hidden relative"
         style={{
           backgroundImage:
-            "linear-gradient(to top, rgba(38,56,78,0.8) 40%, rgba(0,0,0,0.2) 100%), url('/images/ourcommitment-bg.jpg')",
+            "url('/images/why-choose-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="relative z-10 text-white p-6 md:pt-80 md:pb-12 md:px-16">
+        <div className="relative z-10 text-white p-6 md:pt-80 md:pb-12 md:px-8">
           {/* Heading (LEFT aligned) */}
           <div className="mb-10">
-           <h2 className="text-3xl md:text-4xl text-white text-left">
+           <h2 className="text-2xl md:text-4xl text-white text-left">
               Why Choose <span className="text-[#fb8c3b]">Sparx Exteriors?</span>
             </h2>
           </div>
@@ -50,7 +50,7 @@ export default function WhyChooseExteriors() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xs sm:text-sm md:text-base font-medium text-[#203145] leading-tight break-words">
+                  <h3 className="text-xs md:text-[13px] font-medium text-[#203145] leading-tight break-words">
                     {box.heading}
                   </h3>
                 </div>

@@ -90,7 +90,7 @@ export default function ContactExteriors() {
                 alt="Address 1"
                 className="w-5 h-5 mt-1"
               />
-              <span>2323 E Magnolia St Ste 124 Phoenix, AZ 85034</span>
+              <span>3311 W Catalina Dr. Unit A Phoenix, AZ 85017</span>
             </div>
             <div className="flex items-start gap-4">
               <img

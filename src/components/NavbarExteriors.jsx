@@ -32,10 +32,10 @@ export default function NavbarExteriors() {
     {/* Logo */}
     <div className="logo">
       <Image
-        src="/logos/sparXSolar-header.png"
+        src="/logos/sparXExterior-header.png"
         alt="SparX Solar Logo"
-        width={160}
-        height={60}
+        width={70}
+        height={40}
         priority
         style={{ objectFit: "contain" }}
       />

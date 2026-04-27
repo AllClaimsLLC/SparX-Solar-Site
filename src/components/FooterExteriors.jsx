@@ -8,9 +8,9 @@ export default function FooterExteriors() {
         <div className="flex items-center justify-between flex-wrap gap-6">
           {/* Logo */}
           <img
-            src="/logos/sparXSolar-header.png"
+            src="/logos/sparXExterior-footer.png"
             alt="SparX Solar"
-            className="w-40 md:w-72"
+            className="w-20 md:w-36"
           />
 
           {/* Follow Us */}
@@ -52,9 +52,10 @@ export default function FooterExteriors() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left Column */}
           <div className="bg-[#FFF6EF] p-8 text-[#303F52] border-b-2 border-[#FA8C3D]">
-            <p className="text-base md:text-[25px] leading-relaxed">
-              Powering your home with clean, reliable solar energy while helping
-              you save money and build a sustainable future.
+            <p className="text-base md:text-[22px] leading-relaxed">
+              Upgrade your home’s exterior with high-performance materials and
+              expert craftsmanship— designed to improve energy efficiency and
+              deliver long-term savings.
             </p>
           </div>
 
@@ -63,15 +64,25 @@ export default function FooterExteriors() {
             <div className="flex justify-between w-full">
               {/* Left Menu */}
               <ul className="text-[#303F52] text-base md:text-lg space-y-2">
-                <li><a href="#About">About</a></li>
-                <li><a href="#commitment">Committment</a></li>
-                <li><a href="#services">Services</a></li>
+                <li>
+                  <a href="#About">About</a>
+                </li>
+                <li>
+                  <a href="#commitment">Committment</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
               </ul>
 
               {/* Right Menu */}
               <ul className="text-[#303F52] text-base md:text-lg text-right space-y-2">
-                <li><a href="#whychooseus">Why Choose Us</a></li>
-                <li><a href="#ourprocess">Our Process</a></li>
+                <li>
+                  <a href="#whychooseus">Why Choose Us</a>
+                </li>
+                <li>
+                  <a href="#ourprocess">Our Process</a>
+                </li>
               </ul>
             </div>
           </div>

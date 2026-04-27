@@ -9,12 +9,33 @@ export default function ServicesExteriors() {
   const cards = [
     {
       title: "Windows",
+      img: "/images/windows.png",
+      desc: "Energy-efficient replacement windows that lower energy bills, improve comfort, and add lasting value.",
+      points: [
+        "Energy-Efficient Window Installation",
+        "Window Replacement",
+        "Modern Styles & Custom Fit",
+      ],
     },
     {
       title: "Roofing",
+      img: "/images/Roofing.png",
+      desc: "Complete roofing solutions built to protect and beautify your home.",
+      points: [
+        "Roof Replacement & Installation",
+        "Leak Repairs & Maintenance",
+        "High-Quality Materials & Warranty",
+      ],
     },
     {
       title: "Solar",
+      img: "/images/Solar.png",
+      desc: "Complete solar solutions through our dedicated Sparx Solar division — from design to activation.",
+      points: [
+        "Custom Solar System Design",
+        "Professional Installation",
+        "Energy Savings Solutions",
+      ],
     },
   ];
 
@@ -23,14 +44,13 @@ export default function ServicesExteriors() {
       <div className="w-[90%] lg:w-[80%] max-w-[1400px]">
 
         {/* Heading */}
-        <div className="text-center max-w-[800px] mx-auto space-y-4 mb-14">
-          <h2 className="text-3xl md:text-4xl text-[#303F52] text-left sm:text-center">
+        <div className="text-center max-w-[800px] mx-auto space-y-4 mb-6">
+          <h2 className="text-2xl md:text-4xl text-[#303F52] text-left sm:text-center">
             Our Services
           </h2>
 
           <p className="text-gray-600 text-base sm:text-lg text-left sm:text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Everything your home exterior needs — under one trusted brand.
           </p>
         </div>
 
@@ -40,13 +60,13 @@ export default function ServicesExteriors() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-[#f8f8f8] rounded-[15px] p-5 flex flex-col h-full"
+              className="bg-[#f8f8f8] rounded-[15px] p-5 flex flex-col h-full shadow-sm hover:shadow-md transition"
             >
               
               {/* Image */}
               <div className="w-full mb-5">
                 <Image
-                  src="/images/ourcommitment-bg.jpg"
+                  src={card.img}
                   alt={card.title}
                   width={400}
                   height={250}
@@ -55,27 +75,24 @@ export default function ServicesExteriors() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold mb-2 text-left">
+              <h3 className="text-xl font-[500] mb-2 text-left text-[#303F52]">
                 {card.title}
               </h3>
 
               {/* Description */}
               <p className="text-gray-600 text-sm mb-4 text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Ut enim ad minim veniam.
+                {card.desc}
               </p>
 
               {/* Separator */}
               <div className="w-full h-[1px] bg-gray-300 mb-4"></div>
 
               {/* Points */}
-              <div className="space-y-6 mb-6">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <GiCheckMark className="text-gray-700 mt-1" />
-                    <p className="text-sm text-gray-700">
-                      Lorem ipsum dolor sit amet
-                    </p>
+              <div className="space-y-3 mb-6">
+                {card.points.map((item, i) => (
+                  <div key={i} className="flex items-start gap-2">
+                    <GiCheckMark className="text-[#303F52] mt-1" />
+                    <p className="text-sm text-gray-700">{item}</p>
                   </div>
                 ))}
               </div>
@@ -87,7 +104,7 @@ export default function ServicesExteriors() {
                   color="#fb8c3b"
                   textColor="#fff"
                   icon={<MdKeyboardArrowRight size={22} />}
-                  size="small sm:medium"
+                  size="small"
                 />
               </div>
 
