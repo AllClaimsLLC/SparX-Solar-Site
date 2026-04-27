@@ -2,7 +2,7 @@ import { Sora, Outfit } from "next/font/google";
 import "./globals.css";
 
 // Configure fonts
-const sora = Sora({ subsets: ["latin"], weight: ["200", "300", "400", "600", "700"] });
+const sora = Sora({ subsets: ["latin"], weight: ["200", "300", "400", "500", "600", "700"] });
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata = {
