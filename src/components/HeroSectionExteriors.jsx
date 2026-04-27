@@ -50,9 +50,9 @@ export default function HeroSectionExteriors() {
   <div className="text-white space-y-6 order-2 lg:order-1">
     <h1 className="text-3xl sm:text-4xl md:text-[44px] custom-lh">
       Upgrade Your
-      <br className="hidden sm:block" />
+      <br className="hidden sm:block" />{" "}
       Home with Trusted
-      <br className="hidden sm:block" />
+      <br className="hidden sm:block" />{" "}
       Exterior Solutions
     </h1>
 

@@ -31,7 +31,19 @@ export default function KeyEnergyExteriors() {
     },
     {
       title: "Solar + Battery Storage",
-      desc: "Pair solar panels with battery storage for a self-powered home. Full solar solutions available at sparx.solar ",
+      desc: (
+  <>
+    Pair solar panels with battery storage for a self-powered home. Full solar solutions available at{" "}
+    <a
+      href="https://sparx.solar"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#FEDD45] underline font-medium"
+    >
+      sparx.solar
+    </a>
+  </>
+),
       img: "/images/SBS.png",
     },
   ];

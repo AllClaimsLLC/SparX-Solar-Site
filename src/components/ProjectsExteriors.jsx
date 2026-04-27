@@ -55,7 +55,7 @@ export default function ProjectsExteriors() {
                   alt={card.title}
                   width={600}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-fill"
                 />
               </div>
 
